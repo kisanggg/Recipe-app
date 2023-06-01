@@ -1,0 +1,6 @@
+.mealsWrapper{
+    align-content: center;
+}
+.ingredientWrapper{
+    display:flex;
+}

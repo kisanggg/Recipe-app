@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family:'Poppins',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.homeWrapper{
+  display:grid;
+}
+:root{
+  --main-color:rgb(235, 131, 131);
+
+}
+.icon-wrapper{
+  padding:5px;
+  width:20px;
+  height:20px;
+  display:flex;
+  align-items: center;
+  border-radius: 50%;
+  cursor:pointer;
+}
+.icon-wrapper svg{
+  width:20px;
+  height: 20px;
+
+}
+.icon-wrapper:hover{
+  background:rgb(90, 89, 89);
+}
+.w-6{
+  width:25px;
+}

@@ -1,0 +1,13 @@
+.image-uploader-wrapper {
+    padding: 30px;
+    border: 1px dashed var(--main-color);
+    border-radius: 15px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .image-uploader-wrapper:hover {
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+  }
