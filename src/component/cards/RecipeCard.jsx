@@ -11,7 +11,7 @@ function RecipeCard(props){
             Time: <b>15m</b>
           </span>
             
-          </div>
+          </div>              
             
           </div>
     )

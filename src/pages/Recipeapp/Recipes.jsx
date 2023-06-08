@@ -17,7 +17,7 @@ export default function Recipes() {
   
   useEffect(() => {
     getRecipeCategories()
-  },[])
+  },[])    
   useEffect(()=>{
     getMealsByCategory()
   }, [selectedCategory])
