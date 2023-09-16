@@ -1,6 +1,8 @@
-.mealsWrapper{
-    align-content: center;
-}
 .ingredientWrapper{
-    display:flex;
+    display:grid;
+    gap:2;
+}
+.quantityWrapper span{
+    display:grid;
+    gap:2;
 }

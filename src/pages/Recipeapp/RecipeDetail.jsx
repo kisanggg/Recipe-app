@@ -45,32 +45,19 @@ export default function RecipeDetail(){
             </div>
             <br/>
             <div className="ingredientWrapper">
-                <div className="display-grid gap-2">
-                    <h4>Ingredient</h4>
-                    {Array.from({length:20}).map((item,index)=>(
-                      <>
-                      {recipeDetail?.[`strIngredient${index+1}`]?(
-                        <span>{recipeDetail?.[`strIngredient${index+1}`]}</span>
-                      ):(
-                        ''
-                      )}
-                      </>  
-                    ))}
-                </div>
-                <div className="display-grod gap-2">
-                    <h5>Quantity</h5>
-                    {Array.from({length:20}).map((item,index)=>(
-                        <>
-                        {recipeDetail?.[`strMeasure${index+1}`]?(
-                            <span>{recipeDetail?.[`strMeasure${index+1}`]}</span>
-                        ):(
-                            ''
-                        )}
-                        </>
-                    ))}
+                <h2>Ingredients</h2>
+                    <h5>{recipeDetail.strIngredient1}:{recipeDetail.strMeasure1}</h5>
+                    <h5>{recipeDetail.strIngredient2}:{recipeDetail.strMeasure2}</h5>
+                    <h5>{recipeDetail.strIngredient3}:{recipeDetail.strMeasure3}</h5>
+                    <h5>{recipeDetail.strIngredient4}:{recipeDetail.strMeasure4}</h5>
+                    <h5>{recipeDetail.strIngredient5}:{recipeDetail.strMeasure5}</h5>
+                    <h5>{recipeDetail.strIngredient6}:{recipeDetail.strMeasure6}</h5>
+                    <h5>{recipeDetail.strIngredient7}:{recipeDetail.strMeasure7}</h5>
+                    <h5>{recipeDetail.strIngredient8}:{recipeDetail.strMeasure8}</h5>
+                    
                 </div>
             </div>
             
-        </div>
+        
     )
 }

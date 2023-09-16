@@ -18,7 +18,6 @@ function Header(props) {
 
   const links = [
     { link: `/`, title: `Home` },
-    { link: `/gallery`, title: 'Gallery' },
     { link: `/recipes`, title: 'Recipes' },
     { link: `/login`, title: 'Login' },
   ]

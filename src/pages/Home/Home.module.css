@@ -1,0 +1,17 @@
+  .homeWrapper img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .homeWrapper{
+    position: relative;
+    
+  }
+
+  .homeWrapper h1 {
+  position: absolute;
+  top: 0  ;
+  padding: 10px;
+  color: rgb(18, 19, 18);
+}
