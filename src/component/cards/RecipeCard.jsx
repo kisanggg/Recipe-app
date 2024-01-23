@@ -6,10 +6,12 @@ function RecipeCard(props){
         <img alt="" src={props?.recipe?.strMealThumb}></img>
            <div className={styles.contentWrapper}>
            <span className={styles.cardTitle}>{props?.recipe?.strMeal}</span>
-            
+        
+          
           </div>              
             
           </div>
     )
 }
 export default RecipeCard
+
