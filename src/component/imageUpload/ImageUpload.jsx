@@ -41,7 +41,7 @@ const ImageUpload = (props) => {
           <span> Upload an image</span>
         </div>
       </div>
-      
+    
      
     </center>
   )

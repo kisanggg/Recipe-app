@@ -28,6 +28,7 @@ function ImageGallery() {
           ))}
         </div>
       </>
+      
       <ImageUpload
         handleImageUpload={(image) => {
           images.push(image)
