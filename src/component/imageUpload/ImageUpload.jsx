@@ -1,7 +1,7 @@
 import React from 'react'
 import './imageUpload.css'
-import { PlusIcon } from '../../utils/iconUtil'
-import ImageCamera from '../imageCamera/ImageCamera'
+import { PlusIcon } from '../../utils/iconUtils'
+
 
 const ImageUpload = (props) => {
   const [showCamera, setShowCamera] = React.useState(false)
@@ -38,32 +38,11 @@ const ImageUpload = (props) => {
           onClick={() => handleImageClick()}
         >
          {PlusIcon()}
-          <span>Upload a image</span>
+          <span> Upload an image</span>
         </div>
       </div>
-      <button
-        hidden={showCamera}
-        className={`click-photo`}
-        onClick={() => {
-          let elem = document.querySelector(`.image-camera-wrapper`)
-          if (elem) {
-            elem.scrollIntoView()
-          }
-          setShowCamera(true)
-        }}
-      >
-        Open Camera
-      </button>
-      {showCamera ? (
-        <ImageCamera
-          onPhotoClick={(image) => {
-            setShowCamera(false)
-            props.handleImageUpload(image)
-          }}
-        />
-      ) : (
-        ''
-      )}
+      
+     
     </center>
   )
 }

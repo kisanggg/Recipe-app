@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageUpload from './component/imageUpload/ImageUpload'
+import ImageUpload from '../../component/imageUpload/ImageUpload'
 import './imageGallery.css'
 const imageLinks = [
   'https://lh3.googleusercontent.com/bAdLD9j1sn95tJBqnYGGXoyfcDk52dws6gOCPJncmEJRGeODr1ageY8fsVLnX4nlP1zvZ8sHkC8_7pNxMhrvQZpv8uxSTHxJxVt3rg=s1024',
@@ -12,7 +12,7 @@ const imageLinks = [
   'https://lh3.googleusercontent.com/ybZubrzrXXGzoKr412HhmpD7ONOPSTmSTmFkBOd7RW7m1ta7z9EkEmudYxkwS6qGGXNuUIdO6S5UIjGwVg69OL0iZA21w8YoGMsp=s1024',
   'https://lh3.googleusercontent.com/HOc2bMFLc-4TRMC05S2o7kHvwSfVGoRlOWguw5r2UmQYEtFfDtBl_QDvJvD5ziltR3z3s2FIIHg0UCkeXJIpivR5Wg=s1024',
 ]
-function ImageGallery(props) {
+function ImageGallery() {
   const [images, setImages] = React.useState(imageLinks)
   return (
     <div className={'imageWrapperContainer'}>
@@ -32,6 +32,7 @@ function ImageGallery(props) {
         handleImageUpload={(image) => {
           images.push(image)
           setImages([...images])
+          console.log("hi")
         }}
       />
       <>
